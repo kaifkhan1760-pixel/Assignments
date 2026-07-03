@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimeWorld</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="loader">
+    <div class="spinner"></div>
+</div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+        <div class="container">
+
+            <!-- Logo -->
+
+            <a class="navbar-brand fw-bold logo" href="#">
+                🔥 AnimeWorld
+            </a>
+
+            <!-- Mobile Toggle -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navbar Content -->
+
+            <div class="collapse navbar-collapse" id="navMenu">
+
+                <!-- Menu -->
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">
+                            Trending
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="popular.html">
+                            Popular
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="movies.html">
+                            Movies
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            AboutUs
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li> -->
+
+                </ul>
+
+                <!-- Search Bar -->
+
+                <form class="d-flex position-relative me-3">
+
+    <input class="form-control search-box" type="search" placeholder="Search Anime">
+
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+</form>
+
+                <!-- Buttons -->
+
+                <div class="d-flex align-items-center">
+
+                    <a href="login.html" class="btn btn-outline-light me-2">
+                        Login
+                    </a>
+
+                    <a href="register.html" class="btn btn-danger me-2">
+                        Sign Up
+                    </a>
+
+                    <a href="subscribe.html" class="btn premium-btn">
+                        Subscribe
+                    </a>
+
+                </div>
+
+            </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="anime-bg.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content container">
+
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-7">
+
+                <span class="hero-badge">#1 Anime Streaming Platform</span>
+
+                <h1>
+                    Watch Anime Anytime Anywhere
+                </h1>
+
+                <p>
+                    Stream the latest anime movies, trending shows,
+                    epic battles and legendary adventures in Ultra HD.
+                </p>
+
+                <div class="hero-buttons mt-4">
+
+                    <a href="watch.html" class="btn btn-danger btn-lg me-3">
+                        <i class="fa-solid fa-play"></i> Watch Now
+                    </a>
+
+                    <a href="#trending" class="btn btn-outline-light btn-lg">
+                        Explore
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+                    <h1>500+</h1>
+                    <p>Anime Shows</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>120+</h1>
+                    <p>Movies</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>1M+</h1>
+                    <p>Users</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h1>4K</h1>
+                    <p>Ultra HD</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Trending -->
+
+    <section class="container py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-title">Trending This Week</h2>
+        <button class="btn btn-danger">View More</button>
+    </div>
+
+    <div class="trending-slider">
+
+        <div class="slide-card">
+            <img src="https://images.wallpapersden.com/image/download/gear-5-monkey-d-luffy-art-one-piece_bWppZ2WUmZqaraWkpJRoamVsrWdsbmU.jpg">
+            <h4>One Piece</h4>
+        </div>
+
+        <div class="slide-card">
+            <img src="https://img.goodfon.com/wallpaper/big/7/fa/naruto-uzumaki-anime.webp">
+            <h4>Naruto</h4>
+        </div>
+
+        <div class="slide-card">
+            <img src="https://cdn.wallpapersafari.com/16/33/HxTG8F.jpg">
+            <h4>Dragon Ball</h4>
+        </div>
+
+        <div class="slide-card">
+            <img src="https://wallpapers.com/images/featured/bleach-anime-x5ildyvb7u41kblh.jpg">
+            <h4>Bleach</h4>
+        </div>
+
+    </div>
+
+</section>
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://wallpapercg.com/media/ts_2x/9417.webp">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Boruto</h4>
+                        <p>Action • Fantasy</p>
+                        <div class="rating">⭐ 9.8/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://img.goodfon.com/wallpaper/big/7/fa/naruto-uzumaki-anime.webp">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Naruto</h4>
+                        <p>Ninja • Adventure</p>
+                        <div class="rating">⭐ 9.5/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Anime-Boy-Wallpaper-Desktop.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Jogo</h4>
+                        <p>Curse • Action</p>
+                        <div class="rating">⭐ 9.2/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://cdn.wallpapersafari.com/16/33/HxTG8F.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Goku</h4>
+                        <p>Saiyan • Adventure</p>
+                        <div class="rating">⭐ 9.9/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://4kwallpapers.com/images/walls/thumbs_2t/26027.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Zoro</h4>
+                        <p>Swordsman • Pirate</p>
+                        <div class="rating">⭐ 9.6/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://i.redd.it/9ymbi09c6gk11.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Light Yagami</h4>
+                        <p>Psychological • Thriller</p>
+                        <div class="rating">⭐ 9.4/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://i.pinimg.com/736x/0d/b0/80/0db08064258f306c6e6eff4ab81359a7.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Captain Levi</h4>
+                        <p>Titan Slayer • Action</p>
+                        <div class="rating">⭐ 9.7/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img
+                        src="https://images.wallpapersden.com/image/download/gear-5-monkey-d-luffy-art-one-piece_bWppZ2WUmZqaraWkpJRoamVsrWdsbmU.jpg">
+                        <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>One Piece</h4>
+                        <p>Pirates • Comedy</p>
+                        <div class="rating">⭐ 9.8/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img
+                        src="https://static.wikia.nocookie.net/bleach/images/9/91/BBSKenpachiThousandYearBloodWarArc.png/revision/latest/scale-to-width-down/985?cb=20200730023142&path-prefix=en">
+                        <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Kenpachi Zaraki</h4>
+                        <p>Bleach • Battle</p>
+                        <div class="rating">⭐ 9.3/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://getwallpapers.com/wallpaper/full/9/7/9/178536.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Obito Uchiha</h4>
+                        <p>Akatsuki • War</p>
+                        <div class="rating">⭐ 9.5/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img src="https://wallpapers.com/images/featured/bleach-anime-x5ildyvb7u41kblh.jpg">
+                    <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Ichigo</h4>
+                        <p>Soul Reaper • Action</p>
+                        <div class="rating">⭐ 9.4/10</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="col">
+                <div class="anime-card">
+                    <img
+                        src="https://images.wallpapersden.com/image/download/demon-slayer-kimetsu-no-yaiba-4k-poster_bWVtam6UmZqaraWkpJRobWllrWdma2U.jpg">
+                        <!-- Overlay -->
+        <div class="card-overlay">
+
+            <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <button class="watchlist-btn">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+        </div>
+                    <div class="card-content">
+                        <h4>Demon Slayer</h4>
+                        <p>Demons • Action</p>
+                        <div class="rating">⭐ 9.6/10</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular -->
+
+    <section class="container py-5" id="popular">
+
+        <h2 class="section-title mb-4">
+            Popular Characters
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Character -->
+
+            <div class="col-md-4">
+
+                <div class="character-box">
+
+                    <img
+                        src="https://play-lh.googleusercontent.com/nJaTv85WGzfAAH8sggzYfpasQP_-LUKOo6VhVOjeyRo79qnQXE4benCKK_2QbmzszbM=w240-h480-rw">
+
+                    <div class="character-info">
+
+                        <h3>Itachi Uchiha</h3>
+
+                        <p>
+                            Legendary Uchiha clan ninja
+                            with Mangekyou Sharingan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="character-box">
+
+                    <img src="https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg">
+
+                    <div class="character-info">
+
+                        <h3>Sung Jin-Woo</h3>
+
+                        <p>
+                            Shadow Monarch and strongest
+                            hunter in Solo Leveling.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="character-box">
+
+                    <img src="https://wallpapercg.com/media/ts_2x/9417.webp">
+
+                    <div class="character-info">
+
+                        <h3>Boruto Uzumaki</h3>
+
+                        <p>
+                            Next generation ninja with
+                            Karma powers.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Movies -->
+
+    <section class="container py-5" id="movies">
+
+        <h2 class="section-title mb-4">
+            Latest Anime Movies
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://wallpapercg.com/media/ts_2x/9417.webp" class="movie-img">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://img.goodfon.com/wallpaper/big/7/fa/naruto-uzumaki-anime.webp" class="movie-img">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg" class="movie-img">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://m.media-amazon.com/images/I/61cmugCsEaL._AC_UF894,1000_QL80_.jpg" class="movie-img">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyx2amxXl05-7-_kzD9c_4ykSnYWcerghiQg&s"
+                    class="movie-img">
+
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+
+                <img src="https://play-lh.googleusercontent.com/nJaTv85WGzfAAH8sggzYfpasQP_-LUKOo6VhVOjeyRo79qnQXE4benCKK_2QbmzszbM=w240-h480-rw"
+                    class="movie-img">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ADD PREMIUM PLANS HERE -->
+
+    <section class="container py-5">
+
+    <h2 class="section-title text-center mb-5">
+        Premium Plans
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <div class="price">₹199</div>
+
+                <ul>
+                    <li>720p Streaming</li>
+                    <li>1 Device</li>
+                    <li>Ads Included</li>
+                </ul>
+
+                <button class="btn btn-outline-light w-100">
+                    Choose Plan
+                </button>
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="plan-card premium-plan">
+
+                <div class="popular-tag">
+                    MOST POPULAR
+                </div>
+
+                <h3>Premium</h3>
+                <div class="price">₹499</div>
+
+                <ul>
+                    <li>4K Ultra HD</li>
+                    <li>5 Devices</li>
+                    <li>No Ads</li>
+                    <li>Early Access</li>
+                </ul>
+
+                <button class="btn btn-danger w-100">
+                    Get Premium
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="plan-card">
+                <h3>Family</h3>
+                <div class="price">₹799</div>
+
+                <ul>
+                    <li>Unlimited Devices</li>
+                    <li>4K Ultra HD</li>
+                    <li>Offline Download</li>
+                </ul>
+
+                <button class="btn btn-outline-light w-100">
+                    Choose Plan
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Contact -->
+
+    <section class="container py-5" id="contact">
+
+        <div class="contact-box">
+
+            <h2 class="text-center mb-4">
+                Contact Us
+            </h2>
+
+            <form>
+
+                <div class="mb-3">
+
+                    <input type="text" class="form-control" placeholder="Enter Name">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <input type="email" class="form-control" placeholder="Enter Email">
+
+                </div>
+
+                <div class="mb-3">
+
+                    <textarea rows="5" class="form-control" placeholder="Enter Message"></textarea>
+
+                </div>
+
+                <button class="btn btn-danger w-100">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <h3>AnimeWorld</h3>
+
+                    <p>
+                        Best anime streaming UI project
+                        made using Bootstrap.
+                    </p>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="list-unstyled footer-links">
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Trending Anime</a></li>
+                        <li><a href="#">Popular Characters</a></li>
+                        <li><a href="#">Anime Movies</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h3>Follow Us</h3>
+
+                    <i class="fa-brands fa-instagram social-icon"></i>
+                    <i class="fa-brands fa-facebook social-icon"></i>
+                    <i class="fa-brands fa-youtube social-icon"></i>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+
+                <p>
+                    © 2026 AnimeWorld | Designed By Kaif Khan
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+window.addEventListener('load',()=>{
+
+    document.getElementById('loader').style.display='none';
+
+});
+
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script>
+
+const watchlistBtns=document.querySelectorAll('.watchlist-btn');
+
+watchlistBtns.forEach(btn=>{
+
+    btn.addEventListener('click',()=>{
+
+        btn.classList.toggle('active');
+
+        if(btn.classList.contains('active')){
+            btn.style.background='red';
+        }
+        else{
+            btn.style.background='rgba(0,0,0,0.7)';
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>

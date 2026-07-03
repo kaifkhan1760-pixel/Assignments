@@ -1,0 +1,1139 @@
+/* Smooth Scroll */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Body */
+
+body{
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.custom-navbar{
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 15px rgba(255,0,0,0.2);
+}
+
+.nav-link{
+    transition:0.4s;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#ff2d2d !important;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:url('https://cdn.wallpapersafari.com/55/83/Pl6QHc.jpg');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.75);
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+    top:35%;
+}
+
+.hero-content h1{
+    font-size:75px;
+    font-weight:bold;
+    text-shadow:0 0 20px red;
+}
+
+.hero-content p{
+    font-size:22px;
+    width:80%;
+}
+
+/* Section Title */
+
+.section-title{
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* Anime Cards */
+
+.anime-card{
+    background:#151515;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.5s;
+    border:1px solid rgba(255,255,255,0.05);
+    height:100%;
+}
+
+.anime-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,0,0,0.5);
+}
+
+.anime-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card-content h4{
+    margin-bottom:10px;
+}
+
+.rating{
+    color:gold;
+    font-weight:bold;
+}
+
+/* Character Section */
+
+.character-box{
+    background:#151515;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.5s;
+    height:100%;
+}
+
+.character-box:hover{
+    transform:scale(1.03);
+}
+
+.character-box img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.character-info{
+    padding:20px;
+}
+
+/* Movies */
+
+.movie-img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.5s;
+}
+
+.movie-img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(255,0,0,0.5);
+}
+
+/* Contact */
+
+.contact-box{
+    background:#151515;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,0,0,0.2);
+}
+
+.form-control{
+    background:#222;
+    border:none;
+    color:white;
+    padding:15px;
+}
+
+.form-control:focus{
+    background:#222;
+    color:white;
+    box-shadow:none;
+    border:1px solid red;
+}
+
+/* Footer */
+
+.footer{
+    background:#050505;
+    padding:60px 0;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer a:hover{
+    color:red;
+}
+
+.social-icon{
+    font-size:24px;
+    margin-right:15px;
+    transition:0.4s;
+    cursor:pointer;
+}
+
+.social-icon:hover{
+    color:red;
+    transform:scale(1.2);
+}
+
+/* Buttons */
+
+.btn-danger{
+    background:#ff1e1e;
+    border:none;
+    transition:0.4s;
+}
+
+.btn-danger:hover{
+    background:red;
+    transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero-content{
+        top:25%;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        width:100%;
+        font-size:16px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .anime-card img{
+        height:260px;
+    }
+
+    .character-box img{
+        height:260px;
+    }
+
+    .movie-img{
+        height:220px;
+    }
+
+}
+
+.stats-section{
+    background:#111;
+    padding:60px 0;
+    text-align:center;
+}
+
+.stats-section h1{
+    color:red;
+    font-size:50px;
+    font-weight:bold;
+}
+
+.stats-section p{
+    color:#ccc;
+}
+
+/* Navbar */
+
+.custom-navbar{
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(10px);
+    padding:15px 0;
+    transition:0.4s;
+}
+
+.logo{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 10px;
+    font-weight:500;
+    transition:0.4s;
+    position:relative;
+}
+
+.nav-link:hover{
+    color:red !important;
+}
+
+.nav-link::after{
+    content:'';
+    width:0;
+    height:2px;
+    background:red;
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    transition:0.4s;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* Search Box */
+
+.search-box{
+    background:#1a1a1a;
+    border:none;
+    color:white;
+    border-radius:30px;
+    padding:10px 20px;
+}
+
+.search-box:focus{
+    background:#1a1a1a;
+    color:white;
+    box-shadow:none;
+    border:1px solid red;
+}
+
+/* Buttons */
+
+.btn-danger{
+    border-radius:30px;
+    padding:10px 20px;
+}
+
+.btn-outline-light{
+    border-radius:30px;
+    padding:10px 20px;
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .navbar-nav{
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .search-box{
+        margin:20px 0;
+    }
+
+}
+
+/* HERO STATS */
+
+.hero-stats h2{
+    color:red;
+    font-size:38px;
+    font-weight:bold;
+}
+
+.hero-stats p{
+    color:#ccc;
+}
+
+/* CATEGORY BUTTONS */
+
+.anime-categories button{
+    border-radius:30px;
+    padding:8px 20px;
+}
+
+/* POWER LEVEL */
+
+.power-level{
+    color:red;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* MOVIE CARD */
+
+.movie-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.movie-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:0.5s;
+}
+
+.movie-card:hover .movie-overlay{
+    opacity:1;
+}
+
+/* FOOTER */
+
+.footer-links li{
+    margin:10px 0;
+}
+
+.footer-links a{
+    color:#ccc;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.footer-links a:hover{
+    color:red;
+    padding-left:5px;
+}
+
+/* TRENDING PAGE */
+
+.anime-details-card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+    height:100%;
+    box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.anime-details-card:hover{
+    transform:translateY(-10px);
+}
+
+.anime-details-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.anime-info{
+    padding:20px;
+}
+
+.anime-info h3{
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.anime-info p{
+    color:#bbb;
+}
+
+.anime-extra{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+    font-size:14px;
+    color:#ff4444;
+}
+
+/* WATCH PAGE */
+
+.watch-banner{
+    background:url('https://images7.alphacoders.com/105/thumb-1920-1054068.png') center/cover;
+    height:80vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.banner-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+}
+
+.banner-content h1{
+    font-size:70px;
+    font-weight:bold;
+}
+
+.watch-info span{
+    padding:10px 15px;
+    font-size:14px;
+}
+
+/* Episodes */
+
+.episode-card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.episode-card:hover{
+    transform:translateY(-8px);
+}
+
+.episode-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.episode-info{
+    padding:20px;
+}
+
+.episode-info p{
+    color:#bbb;
+}
+
+/* LOGIN & REGISTER */
+
+.auth-body{
+    background:
+    linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)),
+    url('https://wallpapercg.com/media/ts_2x/9417.webp');
+
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Container */
+
+.auth-container{
+    width:100%;
+    padding:20px;
+}
+
+/* Box */
+
+.auth-box{
+    max-width:450px;
+    margin:auto;
+    background:rgba(17,17,17,0.9);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(255,0,0,0.2);
+    color:white;
+}
+
+/* Inputs */
+
+.auth-box .form-control{
+    background:#1b1b1b;
+    border:none;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+}
+
+.auth-box .form-control:focus{
+    background:#1b1b1b;
+    color:white;
+    box-shadow:none;
+    border:1px solid red;
+}
+
+/* Button */
+
+.auth-box .btn{
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* PREMIUM BUTTON */
+
+.premium-btn{
+    background:linear-gradient(45deg,#ff0000,#ff4d4d);
+    color:white;
+    border:none;
+    border-radius:30px;
+    padding:10px 22px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.premium-btn:hover{
+    transform:translateY(-2px);
+    color:white;
+}
+
+/* SUBSCRIBE HERO */
+
+.subscribe-hero{
+    padding:100px 20px 60px;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)),
+    url('https://wallpapercg.com/media/ts_2x/9417.webp');
+
+    background-size:cover;
+    background-position:center;
+}
+
+.subscribe-hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+/* PLAN CARD */
+
+.plan-card{
+    background:#111;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+    transition:0.4s;
+    height:100%;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+}
+
+.plan-card h2{
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:60px;
+    color:red;
+    font-weight:bold;
+}
+
+.plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+.plan-card ul li{
+    margin:15px 0;
+    color:#ccc;
+}
+
+/* PREMIUM PLAN */
+
+.premium-plan{
+    border:2px solid red;
+    transform:scale(1.05);
+}
+
+.popular-tag{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+    background:red;
+    padding:6px 18px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at top,#1a0000,#050505 60%);
+
+    color:white;
+    overflow-x:hidden;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:red;
+    border-radius:20px;
+}
+
+/* HERO VIDEO */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-badge{
+    background:red;
+    padding:10px 18px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero-content h1{
+    font-size:85px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.hero-content p{
+    color:#ccc;
+    width:80%;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* CARD */
+
+.anime-card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    transition:0.5s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.anime-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(255,0,0,0.35);
+}
+
+.anime-card img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.anime-card:hover img{
+    transform:scale(1.08);
+}
+
+.card-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:75px;
+    height:75px;
+
+    border-radius:50%;
+
+    background:rgba(255,0,0,0.85);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    transition:0.5s;
+}
+
+.play-btn i{
+    font-size:28px;
+}
+
+.anime-card:hover .play-btn{
+    opacity:1;
+}
+
+.watchlist-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(0,0,0,0.7);
+    color:white;
+
+    transition:0.4s;
+}
+
+.watchlist-btn:hover{
+    background:red;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.rating{
+    color:gold;
+    font-weight:600;
+}
+
+/* SLIDER */
+
+.trending-slider{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.slide-card{
+    background:#111;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.slide-card:hover{
+    transform:translateY(-8px);
+}
+
+.slide-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.slide-card h4{
+    padding:20px;
+}
+
+/* SEARCH */
+
+.search-icon{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#999;
+}
+
+.search-box{
+    background:#111;
+    border:none;
+    color:white;
+    border-radius:30px;
+    padding:12px 20px;
+    padding-right:45px;
+}
+
+/* PLAN */
+
+.plan-card{
+    background:#111;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+    transition:0.5s;
+}
+
+.plan-card:hover{
+    transform:translateY(-10px);
+}
+
+.price{
+    font-size:60px;
+    color:red;
+    font-weight:bold;
+}
+
+.plan-card ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0;
+}
+
+.plan-card ul li{
+    margin:15px 0;
+    color:#ccc;
+}
+
+.premium-plan{
+    border:2px solid red;
+    transform:scale(1.05);
+}
+
+.popular-tag{
+    position:absolute;
+    top:-12px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:red;
+    padding:6px 18px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* LOADER */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:6px solid #222;
+    border-top:6px solid red;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* BUTTONS */
+
+.btn-danger{
+    background:linear-gradient(45deg,#ff0000,#ff4444);
+    border:none;
+    border-radius:30px;
+    padding:12px 24px;
+}
+
+.btn-danger:hover{
+    transform:translateY(-3px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        width:100%;
+        font-size:15px;
+    }
+
+    .anime-card img{
+        height:260px;
+    }
+
+}
+
+/* HERO */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero-badge{
+    background:red;
+    padding:10px 20px;
+    border-radius:30px;
+    display:inline-block;
+    margin-bottom:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero-content h1{
+    font-size:85px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    color:#ccc;
+    font-size:18px;
+    width:85%;
+    line-height:1.8;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons .btn{
+    border-radius:30px;
+    padding:14px 28px;
+    font-weight:600;
+    transition:0.4s;
+}
+
+.hero-buttons .btn:hover{
+    transform:translateY(-3px);
+}
+
+/* HERO STATS */
+
+.hero-stats h2{
+    color:red;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.hero-stats p{
+    color:#aaa;
+}
+
+/* HERO IMAGE */
+
+.hero-character{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    box-shadow:0 0 40px rgba(255,0,0,0.35);
+    animation:float 3s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .hero{
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .hero-content h1{
+        font-size:50px;
+    }
+
+    .hero-content p{
+        width:100%;
+    }
+
+    .hero-character{
+        margin-top:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .hero-buttons .btn{
+        margin-bottom:15px;
+    }
+
+}
+
